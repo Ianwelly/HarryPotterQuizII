@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/parchment"
+        tools:context="com.example.android.harrypotterquizii.ThirdQuestionsPageActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="@dimen/question_text_size"
+            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
+            android:text="@string/question_9"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
+            android:text="@string/question9" />
+
+        <CheckBox
+            android:id="@+id/incorrect_answer_seventeen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
+            android:textSize="@dimen/text_size"
+            android:text="@string/ron_weasely"
+            android:onClick="toastMessage9"/>
+
+        <CheckBox
+            android:id="@+id/incorrect_answer_eighteen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
+            android:textSize="@dimen/text_size"
+            android:text="@string/hagrid"
+            android:onClick="toastMessage9"/>
+
+        <CheckBox
+            android:id="@+id/correct_answer_nine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
+            android:textSize="@dimen/text_size"
+            android:text="@string/professor_dumbledore"
+            android:onClick="toastMessage9"/>
+
+        <!-- Question 10 -->
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
+            android:textSize="@dimen/question_text_size"
+            android:text="@string/question_10"
+            />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
+            android:textSize="@dimen/text_size"
+            android:text="@string/question10"
+            />
+
+        <CheckBox
+            android:id="@+id/correct_answer_ten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
+            android:textSize="@dimen/text_size"
+            android:text="@string/hermione_grainger"
+            android:onClick="toastMessage10"/>
+
+        <CheckBox
+            android:id="@+id/incorrect_answer_nineteen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
+            android:textSize="@dimen/text_size"
+            android:text="@string/albus_dumbledore"
+            android:onClick="toastMessage10"/>
+
+        <CheckBox
+            android:id="@+id/incorrect_answer_twenty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
+            android:textSize="@dimen/text_size"
+            android:text="@string/professor_umbridge"
+            android:onClick="toastMessage10"/>
+
+        <!-- Question 11 -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
+            android:textStyle="bold"
+            android:textSize="@dimen/question_text_size"
+            android:text="@string/question_11"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
+            android:text="@string/question11"/>
+
+        <CheckBox
+            android:id="@+id/incorrect_answer_twenty_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
+            android:textSize="@dimen/text_size"
+            android:text="@string/accio"
+            android:onClick="toastMessage11"/>
+
+        <CheckBox
+            android:id="@+id/incorrect_answer_twenty_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
+            android:textSize="@dimen/text_size"
+            android:text="@string/alohomora"
+            android:onClick="toastMessage11"/>
+
+        <CheckBox
+            android:id="@+id/correct_answer_eleven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
+            android:textSize="@dimen/text_size"
+            android:text="@string/stinging_jinx"
+            android:onClick="toastMessage11"/>
+
+        <!-- Question 12 -->
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
+            android:textSize="@dimen/question_text_size"
+            android:text="@string/question_12"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
+            android:text="@string/question12"/>
+
+        <CheckBox
+            android:id="@+id/incorrect_answer_twenty_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
+            android:textSize="@dimen/text_size"
+            android:text="@string/alihosty_draught"
+            android:onClick="toastMessage12"/>
+
+        <CheckBox
+            android:id="@+id/correct_answer_twelve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
+            android:textSize="@dimen/text_size"
+            android:text="@string/amortentia"
+            android:onClick="toastMessage12"/>
+
+        <CheckBox
+            android:id="@+id/incorrect_answer_twenty_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
+            android:textSize="@dimen/text_size"
+            android:text="@string/equinox"
+            android:onClick="toastMessage12"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/enter_button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/QuestionPage_One_Enter_Button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:textSize="@dimen/button_text_size"
+                android:onClick="final_score_page"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>

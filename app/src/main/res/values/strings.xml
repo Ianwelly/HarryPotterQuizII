@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">HarryPotterQuizII</string>
+    <string name="home_page_button">enter</string>
+    <string name="Question_1">What time does the Hogwarts Express leave platform 9 3/4?</string>
+    <string name="_11_o_clock">11 o\'clock</string>
+    <string name="_9_o_clock">9 o\'clock</string>
+    <string name="midday">Midday</string>
+    <string name="question2">How many sisters does Ron Weasley have?</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_1">1</string>
+    <string name="question3">What is the name of Voldermort\'s snake?</string>
+    <string name="dave">Dave</string>
+    <string name="scabbers">Scabbers</string>
+    <string name="najini">Najini</string>
+    <string name="question4">How many horcruxes were there?</string>
+    <string name="_4">4</string>
+    <string name="_7">7</string>
+    <string name="_10">10</string>
+    <string name="QuestionPage_One_Enter_Button">enter</string>
+    <string name="question_1">Question 1</string>
+    <string name="question_2">Question 2</string>
+    <string name="question_3">Question 3</string>
+    <string name="question_4">Question 4</string>
+
+    <!-- Second Activity Questions Page Strings -->
+    <string name="question5">What is the name of the Ministry of Magic employeen that Ron inpersonates using the Polyjuice potion?</string>
+    <string name="question_5">Question 5</string>
+    <string name="reg_cattermole">Reg Cattermole</string>
+    <string name="albert_runcorn">Albert Runcorn</string>
+    <string name="cornelius_fudge">Cornelius Fudge</string>
+    <string name="question_6">Question 6</string>
+    <string name="question6">Who binds the Unbreakable Vow between Professor Snape and Narcissa Malfoy?</string>
+    <string name="rufus_scrimgeour">Rufus Scrimgeour</string>
+    <string name="professor_mcgonagall">Professor McGonagall</string>
+    <string name="bellatrix_lestrange">Bellatrix Lestrange</string>
+    <string name="question_7">Question 7</string>
+    <string name="question7">Which Death Eater\'s trial does Harry see when he first looks into Dumbledore\'s Pensieve?</string>
+    <string name="igor_karkaroff_s">Igor Karkaroff\'s</string>
+    <string name="alecto_carrow">Alecto Carrow</string>
+    <string name="bellatrix_lestrange_death_eater">Bellatrix Lestrange</string>
+    <string name="question8">Which professor has a portrait of himself painting another portrait of himself in his classroom?</string>
+    <string name="quirinus_quirrel">Quirinus Quirrel</string>
+    <string name="severus_snape">Severus Snape</string>
+    <string name="gilderoy_lockheart">Gilderoy Lockheart</string>
+
+    <!-- Third Questions Activity Page -->
+    <string name="question_9">Question 9</string>
+    <string name="question9">Haryy first Apparated alongside whom?</string>
+    <string name="ron_weasely">Ron Weasely</string>
+    <string name="hagrid">Hagrid</string>
+    <string name="professor_dumbledore">Professor Dumbledore</string>
+    <string name="question_10">Question 10</string>
+    <string name="question10">Who uses the Petrificus Totalus spell on Neville to immobilise him and leave the Gryffindor Tower?</string>
+    <string name="hermione_grainger">Hermione Grainger</string>
+    <string name="albus_dumbledore">Albus Dumbledore</string>
+    <string name="professor_umbridge">Professor Umbridge</string>
+    <string name="question_11">Question 11</string>
+    <string name="question11">What type of spell does Hermione cast on Harry when they are caught by the snatchers?</string>
+    <string name="accio">Accio</string>
+    <string name="alohomora">Alohomora</string>
+    <string name="stinging_jinx">Stinging Jinx</string>
+    <string name="question_12">Question 12</string>
+    <string name="question12">What is the name of the most powerful love potion in the world that Professor Slughorn introduces the class to in his first lesson?</string>
+    <string name="alihosty_draught">Alihosty Draught</string>
+    <string name="amortentia">Amortentia</string>
+    <string name="equinox">Equinox</string>
+    <string name="intro_text">Welcome to the Harry Potter Quiz!\nThese questions were set by:\nKezia the Witch\nRosie the Hobbit\nand Lilia the Elf!\nEnjoy</string>
+
+
+</resources>
