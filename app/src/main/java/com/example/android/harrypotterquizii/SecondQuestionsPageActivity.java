@@ -1,14 +1,19 @@
 package com.example.android.harrypotterquizii;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CheckBox;
+import android.widget.RadioButton;
 import android.widget.Toast;
+
+import static com.example.android.harrypotterquizii.R.id.incorrect_answer_nine;
+import static com.example.android.harrypotterquizii.R.id.incorrect_answer_sixteen;
+import static com.example.android.harrypotterquizii.R.id.incorrect_answer_thirteen;
+import static com.example.android.harrypotterquizii.R.id.incorrect_answer_twelve;
 
 public class SecondQuestionsPageActivity extends AppCompatActivity {
 
@@ -29,115 +34,223 @@ public class SecondQuestionsPageActivity extends AppCompatActivity {
     }
 
     public void toastMessage5 (View view) {
-        CheckBox cb13 = (CheckBox) findViewById(R.id.correct_answer_five);
-        CheckBox cb14 = (CheckBox) findViewById(R.id.incorrect_answer_nine);
-        CheckBox cb15 = (CheckBox) findViewById(R.id.incorrect_answer_ten);
+//        CheckBox cb13 = (CheckBox) findViewById(R.id.correct_answer_five);
+//        CheckBox cb14 = (CheckBox) findViewById(R.id.incorrect_answer_nine);
+//        CheckBox cb15 = (CheckBox) findViewById(R.id.incorrect_answer_ten);
 
-        // Question 5 if statements for toasts
-        if (cb13.isChecked()) {
+        RadioButton answerFive_btOne = (RadioButton) findViewById(R.id.correct_answer_five);
+        RadioButton answerFive_btTwo = (RadioButton) findViewById(incorrect_answer_nine);
+        RadioButton answerFive_btThree = (RadioButton) findViewById(R.id.incorrect_answer_ten);
+
+        boolean correctAnswerFive = answerFive_btOne.isChecked();
+
+        if (correctAnswerFive) {
+            Total = Total +1;
+            answerFive_btOne.setTextColor(Color.GREEN);
+        } else {
+            Total = Total;
+            answerFive_btOne.setTextColor(Color.GREEN);
+            answerFive_btTwo.setTextColor(Color.RED);
+            answerFive_btThree.setTextColor(Color.RED);
+        }
+
+        if (answerFive_btOne.isChecked()) {
             Toast.makeText(this, "Correct answer!", Toast.LENGTH_SHORT).show();
         }
-        if (cb14.isChecked()) {
+        if (answerFive_btTwo.isChecked()) {
             Toast.makeText(this, "Incorrect answer!", Toast.LENGTH_SHORT).show();
         }
-        if (cb15.isChecked()) {
+        if (answerFive_btThree.isChecked()) {
             Toast.makeText(this, "Incorrect answer", Toast.LENGTH_SHORT).show();
         }
     }
 
+        // Question 5 if statements for toasts
+//        if (cb13.isChecked()) {
+//            Toast.makeText(this, "Correct answer!", Toast.LENGTH_SHORT).show();
+//        }
+//        if (cb14.isChecked()) {
+//            Toast.makeText(this, "Incorrect answer!", Toast.LENGTH_SHORT).show();
+//        }
+//        if (cb15.isChecked()) {
+//            Toast.makeText(this, "Incorrect answer", Toast.LENGTH_SHORT).show();
+//        }
+//    }
+
     public void toastMessage6 (View view) {
-        CheckBox cb16 = (CheckBox) findViewById(R.id.correct_answer_six);
-        CheckBox cb17 = (CheckBox) findViewById(R.id.incorrect_answer_eleven);
-        CheckBox cb18 = (CheckBox) findViewById(R.id.incorrect_answer_twelve);
+//        CheckBox cb16 = (CheckBox) findViewById(R.id.correct_answer_six);
+//        CheckBox cb17 = (CheckBox) findViewById(R.id.incorrect_answer_eleven);
+//        CheckBox cb18 = (CheckBox) findViewById(R.id.incorrect_answer_twelve);
+
+        RadioButton answerSix_btOne = (RadioButton) findViewById(R.id.incorrect_answer_eleven);
+        RadioButton answerSix_btTwo = (RadioButton) findViewById(incorrect_answer_twelve);
+        RadioButton answerSix_btThree = (RadioButton) findViewById(R.id.correct_answer_six);
+
+        boolean correctAnswerSix = answerSix_btThree.isChecked();
+
+        if (correctAnswerSix) {
+            Total = Total +1;
+            answerSix_btThree.setTextColor(Color.GREEN);
+        } else {
+            Total = Total;
+            answerSix_btOne.setTextColor(Color.RED);
+            answerSix_btTwo.setTextColor(Color.RED);
+            answerSix_btThree.setTextColor(Color.GREEN);
+        }
+
+        if (answerSix_btOne.isChecked()) {
+            Toast.makeText(this, "Inorrect answer!", Toast.LENGTH_SHORT).show();
+        }
+        if (answerSix_btTwo.isChecked()) {
+            Toast.makeText(this, "Incorrect answer!", Toast.LENGTH_SHORT).show();
+        }
+        if (answerSix_btThree.isChecked()) {
+            Toast.makeText(this, "Correct answer", Toast.LENGTH_SHORT).show();
+        }
+    }
 
 
         // Question 6 if statements or toasts
 
-        if (cb16.isChecked()) {
-            Toast.makeText(this, "Correct answer!", Toast.LENGTH_SHORT).show();
-        }
-        if (cb17.isChecked()) {
-            Toast.makeText(this, "Incorrect answer!", Toast.LENGTH_SHORT).show();
-        }
-        if (cb18.isChecked()) {
-            Toast.makeText(this, "Incorrect answer", Toast.LENGTH_SHORT).show();
-        }
-    }
+//        if (cb16.isChecked()) {
+//            Toast.makeText(this, "Correct answer!", Toast.LENGTH_SHORT).show();
+//        }
+//        if (cb17.isChecked()) {
+//            Toast.makeText(this, "Incorrect answer!", Toast.LENGTH_SHORT).show();
+//        }
+//        if (cb18.isChecked()) {
+//            Toast.makeText(this, "Incorrect answer", Toast.LENGTH_SHORT).show();
+//        }
+
 
     public void toastMessage7 (View view) {
-        CheckBox cb19 = (CheckBox) findViewById(R.id.correct_answer_seven);
-        CheckBox cb20 = (CheckBox) findViewById(R.id.incorrect_answer_thirteen);
-        CheckBox cb21 = (CheckBox) findViewById(R.id.incorrect_answer_fourteen);
+//        CheckBox cb19 = (CheckBox) findViewById(R.id.correct_answer_seven);
+//        CheckBox cb20 = (CheckBox) findViewById(R.id.incorrect_answer_thirteen);
+//        CheckBox cb21 = (CheckBox) findViewById(R.id.incorrect_answer_fourteen);
 
-        //Question 7 if statements for toasts
+        RadioButton answerSeven_btOne = (RadioButton) findViewById(R.id.correct_answer_seven);
+        RadioButton answerSeven_btTwo = (RadioButton) findViewById(incorrect_answer_thirteen);
+        RadioButton answerSeven_btThree = (RadioButton) findViewById(R.id.incorrect_answer_fourteen);
 
-        if (cb19.isChecked()) {
+        boolean correctAnswerSeven = answerSeven_btOne.isChecked();
+
+        if (correctAnswerSeven) {
+            Total = Total +1;
+            answerSeven_btOne.setTextColor(Color.GREEN);
+        } else {
+            Total = Total;
+            answerSeven_btOne.setTextColor(Color.GREEN);
+            answerSeven_btTwo.setTextColor(Color.RED);
+            answerSeven_btThree.setTextColor(Color.RED);
+        }
+
+        if (answerSeven_btOne.isChecked()) {
             Toast.makeText(this, "Correct answer!", Toast.LENGTH_SHORT).show();
         }
-        if (cb20.isChecked()) {
+        if (answerSeven_btTwo.isChecked()) {
             Toast.makeText(this, "Incorrect answer!", Toast.LENGTH_SHORT).show();
         }
-        if (cb21.isChecked()) {
-            Toast.makeText(this, "Incorrect answer", Toast.LENGTH_SHORT).show();
+        if (answerSeven_btThree.isChecked()) {
+            Toast.makeText(this, "Inorrect answer", Toast.LENGTH_SHORT).show();
         }
     }
+//
+//        //Question 7 if statements for toasts
+//
+//        if (cb19.isChecked()) {
+//            Toast.makeText(this, "Correct answer!", Toast.LENGTH_SHORT).show();
+//        }
+//        if (cb20.isChecked()) {
+//            Toast.makeText(this, "Incorrect answer!", Toast.LENGTH_SHORT).show();
+//        }
+//        if (cb21.isChecked()) {
+//            Toast.makeText(this, "Incorrect answer", Toast.LENGTH_SHORT).show();
+//        }
+//    }
 
     public void toastMessage8 (View view) {
-        CheckBox cb22 = (CheckBox) findViewById(R.id.correct_answer_eight);
-        CheckBox cb23 = (CheckBox) findViewById(R.id.incorrect_answer_fifteen);
-        CheckBox cb24 = (CheckBox) findViewById(R.id.incorrect_answer_sixteen);
+//        CheckBox cb22 = (CheckBox) findViewById(R.id.correct_answer_eight);
+//        CheckBox cb23 = (CheckBox) findViewById(R.id.incorrect_answer_fifteen);
+//        CheckBox cb24 = (CheckBox) findViewById(R.id.incorrect_answer_sixteen);
 
-        //Question 8 if statements for toasts
+        RadioButton answerEight_btOne = (RadioButton) findViewById(R.id.incorrect_answer_fifteen);
+        RadioButton answerEight_btTwo = (RadioButton) findViewById(incorrect_answer_sixteen);
+        RadioButton answerEight_btThree = (RadioButton) findViewById(R.id.correct_answer_eight);
 
-        if (cb22.isChecked()) {
-            Toast.makeText(this, "Correct answer!", Toast.LENGTH_SHORT).show();
+        boolean correctAnswerEight = answerEight_btThree.isChecked();
+
+        if (correctAnswerEight) {
+            Total = Total +1;
+            answerEight_btThree.setTextColor(Color.GREEN);
+        } else {
+            Total = Total;
+            answerEight_btOne.setTextColor(Color.RED);
+            answerEight_btTwo.setTextColor(Color.RED);
+            answerEight_btThree.setTextColor(Color.GREEN);
         }
-        if (cb23.isChecked()) {
+
+        if (answerEight_btOne.isChecked()) {
             Toast.makeText(this, "Incorrect answer!", Toast.LENGTH_SHORT).show();
         }
-        if (cb24.isChecked()) {
-            Toast.makeText(this, "Incorrect answer", Toast.LENGTH_SHORT).show();
+        if (answerEight_btTwo.isChecked()) {
+            Toast.makeText(this, "Incorrect answer!", Toast.LENGTH_SHORT).show();
+        }
+        if (answerEight_btThree.isChecked()) {
+            Toast.makeText(this, "Correct answer", Toast.LENGTH_SHORT).show();
         }
     }
+//
+//        //Question 8 if statements for toasts
+//
+//        if (cb22.isChecked()) {
+//            Toast.makeText(this, "Correct answer!", Toast.LENGTH_SHORT).show();
+//        }
+//        if (cb23.isChecked()) {
+//            Toast.makeText(this, "Incorrect answer!", Toast.LENGTH_SHORT).show();
+//        }
+//        if (cb24.isChecked()) {
+//            Toast.makeText(this, "Incorrect answer", Toast.LENGTH_SHORT).show();
+//        }
+//    }
 
 
     public void third_question_page(View view) {
         Intent intentTwo = new Intent(this, ThirdQuestionsPageActivity.class);
 
-        CheckBox firstAnswerCheckbox = (CheckBox) findViewById(R.id.correct_answer_five);
-        if (firstAnswerCheckbox.isChecked()) {
-            Total = Total + 1;
-        } else {
-            Total = Total;
-        }
-
-        Log.v("SecondQuestionsPage", "Score is " + Total);
-
-        CheckBox secondAnswerCheckbox = (CheckBox) findViewById(R.id.correct_answer_six);
-        if (secondAnswerCheckbox.isChecked()) {
-            Total = Total + 1;
-        } else {
-            Total = Total;
-        }
-
-        Log.v("SecondQuestionsPage", "Score is " + Total);
-
-        CheckBox thirdAnswerCheckbox = (CheckBox) findViewById(R.id.correct_answer_seven);
-        if (thirdAnswerCheckbox.isChecked()) {
-            Total += 1;
-        } else {
-            Total = Total;
-        }
-
-        Log.v("SecondQuestionsPage", "Score is " + Total);
-
-        CheckBox fourthAnswerCheckbox = (CheckBox) findViewById(R.id.correct_answer_eight);
-        if (fourthAnswerCheckbox.isChecked()) {
-            Total += 1;
-        } else {
-            Total = Total;
-        }
-        Log.v("SecondQuestionsPage", "Score" + Total);
+//        CheckBox firstAnswerCheckbox = (CheckBox) findViewById(R.id.correct_answer_five);
+//        if (firstAnswerCheckbox.isChecked()) {
+//            Total = Total + 1;
+//        } else {
+//            Total = Total;
+//        }
+//
+//        Log.v("SecondQuestionsPage", "Score is " + Total);
+//
+//        CheckBox secondAnswerCheckbox = (CheckBox) findViewById(R.id.correct_answer_six);
+//        if (secondAnswerCheckbox.isChecked()) {
+//            Total = Total + 1;
+//        } else {
+//            Total = Total;
+//        }
+//
+//        Log.v("SecondQuestionsPage", "Score is " + Total);
+//
+//        CheckBox thirdAnswerCheckbox = (CheckBox) findViewById(R.id.correct_answer_seven);
+//        if (thirdAnswerCheckbox.isChecked()) {
+//            Total += 1;
+//        } else {
+//            Total = Total;
+//        }
+//
+//        Log.v("SecondQuestionsPage", "Score is " + Total);
+//
+//        CheckBox fourthAnswerCheckbox = (CheckBox) findViewById(R.id.correct_answer_eight);
+//        if (fourthAnswerCheckbox.isChecked()) {
+//            Total += 1;
+//        } else {
+//            Total = Total;
+//        }
+//        Log.v("SecondQuestionsPage", "Score" + Total);
 
         intentTwo.putExtra("RunningTotal", Total);
         startActivity(intentTwo);

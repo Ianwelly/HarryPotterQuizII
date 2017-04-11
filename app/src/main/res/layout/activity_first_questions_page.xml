@@ -33,35 +33,64 @@
             android:layout_marginLeft="@dimen/text_view_checkbox_margin"
             android:text="@string/Question_1"/>
 
-        <CheckBox
-            android:id="@+id/correct_answer_one"
-            android:layout_width="match_parent"
+        <RadioGroup
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="8dp"
-            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
-            android:textSize="@dimen/text_size"
-            android:text="@string/_11_o_clock"
-            android:onClick="toastMessage1"/>
+            android:orientation="vertical"
+            android:paddingLeft="8dp">
 
-        <CheckBox
-            android:id="@+id/incorrect_answer_one"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="8dp"
-            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
-            android:textSize="@dimen/text_size"
-            android:text="@string/_9_o_clock"
-            android:onClick="toastMessage1"/>
+            <RadioButton
+                android:id="@+id/correct_answer_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_11_o_clock"
+                android:onClick="toastMessage1"/>
 
-        <CheckBox
-            android:id="@+id/incorrect_answer_two"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="8dp"
-            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
-            android:textSize="@dimen/text_size"
-            android:text="@string/midday"
-            android:onClick="toastMessage1"/>
+            <RadioButton
+                android:id="@+id/incorrect_answer_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_9_o_clock"
+                android:onClick="toastMessage1"/>
+
+            <RadioButton
+                android:id="@+id/incorrect_answer_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/midday"
+                android:onClick="toastMessage1"/>
+
+        </RadioGroup>
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/correct_answer_one"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="8dp"-->
+            <!--android:layout_marginLeft="@dimen/text_view_checkbox_margin"-->
+            <!--android:textSize="@dimen/text_size"-->
+            <!--android:text="@string/_11_o_clock"-->
+            <!--android:onClick="toastMessage1"/>-->
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/incorrect_answer_one"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="8dp"-->
+            <!--android:layout_marginLeft="@dimen/text_view_checkbox_margin"-->
+            <!--android:textSize="@dimen/text_size"-->
+            <!--android:text="@string/_9_o_clock"-->
+            <!--android:onClick="toastMessage1"/>-->
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/incorrect_answer_two"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="8dp"-->
+            <!--android:layout_marginLeft="@dimen/text_view_checkbox_margin"-->
+            <!--android:textSize="@dimen/text_size"-->
+            <!--android:text="@string/midday"-->
+            <!--android:onClick="toastMessage1"/>-->
 
         <!-- Question 2 -->
 
@@ -83,35 +112,64 @@
             android:text="@string/question2"
             />
 
-        <CheckBox
-            android:id="@+id/incorrect_answer_three"
-            android:layout_width="match_parent"
+        <RadioGroup
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="8dp"
-            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
-            android:textSize="@dimen/text_size"
-            android:text="@string/_2"
-            android:onClick="toastMessage2"/>
+            android:orientation="vertical"
+            android:paddingLeft="8dp">
 
-        <CheckBox
-            android:id="@+id/incorrect_answer_four"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="8dp"
-            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
-            android:textSize="@dimen/text_size"
-            android:text="@string/_3"
-            android:onClick="toastMessage2"/>
+            <RadioButton
+                android:id="@+id/incorrect_answer_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_2"
+                android:onClick="toastMessage2"/>
 
-        <CheckBox
-            android:id="@+id/correct_answer_two"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="8dp"
-            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
-            android:textSize="@dimen/text_size"
-            android:text="@string/_1"
-            android:onClick="toastMessage2"/>
+            <RadioButton
+                android:id="@+id/incorrect_answer_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_3"
+                android:onClick="toastMessage2"/>
+
+            <RadioButton
+                android:id="@+id/correct_answer_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_1"
+                android:onClick="toastMessage2"/>
+
+        </RadioGroup>
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/incorrect_answer_three"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="8dp"-->
+            <!--android:layout_marginLeft="@dimen/text_view_checkbox_margin"-->
+            <!--android:textSize="@dimen/text_size"-->
+            <!--android:text="@string/_2"-->
+            <!--android:onClick="toastMessage2"/>-->
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/incorrect_answer_four"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="8dp"-->
+            <!--android:layout_marginLeft="@dimen/text_view_checkbox_margin"-->
+            <!--android:textSize="@dimen/text_size"-->
+            <!--android:text="@string/_3"-->
+            <!--android:onClick="toastMessage2"/>-->
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/correct_answer_two"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="8dp"-->
+            <!--android:layout_marginLeft="@dimen/text_view_checkbox_margin"-->
+            <!--android:textSize="@dimen/text_size"-->
+            <!--android:text="@string/_1"-->
+            <!--android:onClick="toastMessage2"/>-->
 
         <!-- Question 3 -->
 
@@ -131,35 +189,64 @@
             android:layout_marginLeft="@dimen/text_view_checkbox_margin"
             android:text="@string/question3"/>
 
-        <CheckBox
-            android:id="@+id/incorrect_answer_five"
-            android:layout_width="match_parent"
+        <RadioGroup
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="8dp"
-            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
-            android:textSize="@dimen/text_size"
-            android:text="@string/dave"
-            android:onClick="toastMessage3"/>
+            android:orientation="vertical"
+            android:paddingLeft="8dp">
 
-        <CheckBox
-            android:id="@+id/incorrect_answer_six"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="8dp"
-            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
-            android:textSize="@dimen/text_size"
-            android:text="@string/scabbers"
-            android:onClick="toastMessage3"/>
+            <RadioButton
+                android:id="@+id/incorrect_answer_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dave"
+                android:onClick="toastMessage3"/>
 
-        <CheckBox
-            android:id="@+id/correct_answer_three"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="8dp"
-            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
-            android:textSize="@dimen/text_size"
-            android:text="@string/najini"
-            android:onClick="toastMessage3"/>
+            <RadioButton
+                android:id="@+id/incorrect_answer_six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scabbers"
+                android:onClick="toastMessage3"/>
+
+            <RadioButton
+                android:id="@+id/correct_answer_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/najini"
+                android:onClick="toastMessage3"/>
+
+        </RadioGroup>
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/incorrect_answer_five"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="8dp"-->
+            <!--android:layout_marginLeft="@dimen/text_view_checkbox_margin"-->
+            <!--android:textSize="@dimen/text_size"-->
+            <!--android:text="@string/dave"-->
+            <!--android:onClick="toastMessage3"/>-->
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/incorrect_answer_six"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="8dp"-->
+            <!--android:layout_marginLeft="@dimen/text_view_checkbox_margin"-->
+            <!--android:textSize="@dimen/text_size"-->
+            <!--android:text="@string/scabbers"-->
+            <!--android:onClick="toastMessage3"/>-->
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/correct_answer_three"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="8dp"-->
+            <!--android:layout_marginLeft="@dimen/text_view_checkbox_margin"-->
+            <!--android:textSize="@dimen/text_size"-->
+            <!--android:text="@string/najini"-->
+            <!--android:onClick="toastMessage3"/>-->
 
         <!-- Question 4 -->
 
@@ -180,35 +267,65 @@
             android:layout_marginLeft="@dimen/text_view_checkbox_margin"
             android:text="@string/question4"/>
 
-        <CheckBox
-            android:id="@+id/incorrect_answer_seven"
-            android:layout_width="match_parent"
+        <RadioGroup
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="8dp"
-            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
-            android:textSize="@dimen/text_size"
-            android:text="@string/_4"
-            android:onClick="toastMessage4"/>
+            android:orientation="vertical"
+            android:paddingLeft="8dp">
 
-        <CheckBox
-            android:id="@+id/correct_answer_four"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="8dp"
-            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
-            android:textSize="@dimen/text_size"
-            android:text="@string/_7"
-            android:onClick="toastMessage4"/>
+            <RadioButton
+                android:id="@+id/incorrect_answer_seven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_4"
+                android:onClick="toastMessage4"/>
 
-        <CheckBox
-            android:id="@+id/incorrect_answer_eight"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="8dp"
-            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
-            android:textSize="@dimen/text_size"
-            android:text="@string/_10"
-            android:onClick="toastMessage4"/>
+            <RadioButton
+                android:id="@+id/correct_answer_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_7"
+                android:onClick="toastMessage4"/>
+
+            <RadioButton
+                android:id="@+id/correct_answer_eight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_10"
+                android:onClick="toastMessage4"/>
+
+        </RadioGroup>
+
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/incorrect_answer_seven"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="8dp"-->
+            <!--android:layout_marginLeft="@dimen/text_view_checkbox_margin"-->
+            <!--android:textSize="@dimen/text_size"-->
+            <!--android:text="@string/_4"-->
+            <!--android:onClick="toastMessage4"/>-->
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/correct_answer_four"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="8dp"-->
+            <!--android:layout_marginLeft="@dimen/text_view_checkbox_margin"-->
+            <!--android:textSize="@dimen/text_size"-->
+            <!--android:text="@string/_7"-->
+            <!--android:onClick="toastMessage4"/>-->
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/incorrect_answer_eight"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="8dp"-->
+            <!--android:layout_marginLeft="@dimen/text_view_checkbox_margin"-->
+            <!--android:textSize="@dimen/text_size"-->
+            <!--android:text="@string/_10"-->
+            <!--android:onClick="toastMessage4"/>-->
 
         <RelativeLayout
             android:layout_width="match_parent"

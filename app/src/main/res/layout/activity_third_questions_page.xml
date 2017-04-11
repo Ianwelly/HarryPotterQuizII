@@ -27,35 +27,64 @@
             android:layout_marginLeft="@dimen/text_view_checkbox_margin"
             android:text="@string/question9" />
 
-        <CheckBox
-            android:id="@+id/incorrect_answer_seventeen"
-            android:layout_width="match_parent"
+        <RadioGroup
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="8dp"
-            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
-            android:textSize="@dimen/text_size"
-            android:text="@string/ron_weasely"
-            android:onClick="toastMessage9"/>
+            android:orientation="vertical"
+            android:paddingLeft="8dp">
 
-        <CheckBox
-            android:id="@+id/incorrect_answer_eighteen"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="8dp"
-            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
-            android:textSize="@dimen/text_size"
-            android:text="@string/hagrid"
-            android:onClick="toastMessage9"/>
+            <RadioButton
+                android:id="@+id/incorrect_answer_seventeen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ron_weasely"
+                android:onClick="toastMessage9"/>
 
-        <CheckBox
-            android:id="@+id/correct_answer_nine"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="8dp"
-            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
-            android:textSize="@dimen/text_size"
-            android:text="@string/professor_dumbledore"
-            android:onClick="toastMessage9"/>
+            <RadioButton
+                android:id="@+id/incorrect_answer_eighteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hagrid"
+                android:onClick="toastMessage9"/>
+
+            <RadioButton
+                android:id="@+id/correct_answer_nine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/professor_dumbledore"
+                android:onClick="toastMessage9"/>
+
+        </RadioGroup>
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/incorrect_answer_seventeen"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="8dp"-->
+            <!--android:layout_marginLeft="@dimen/text_view_checkbox_margin"-->
+            <!--android:textSize="@dimen/text_size"-->
+            <!--android:text="@string/ron_weasely"-->
+            <!--android:onClick="toastMessage9"/>-->
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/incorrect_answer_eighteen"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="8dp"-->
+            <!--android:layout_marginLeft="@dimen/text_view_checkbox_margin"-->
+            <!--android:textSize="@dimen/text_size"-->
+            <!--android:text="@string/hagrid"-->
+            <!--android:onClick="toastMessage9"/>-->
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/correct_answer_nine"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="8dp"-->
+            <!--android:layout_marginLeft="@dimen/text_view_checkbox_margin"-->
+            <!--android:textSize="@dimen/text_size"-->
+            <!--android:text="@string/professor_dumbledore"-->
+            <!--android:onClick="toastMessage9"/>-->
 
         <!-- Question 10 -->
 
@@ -79,35 +108,64 @@
             android:text="@string/question10"
             />
 
-        <CheckBox
-            android:id="@+id/correct_answer_ten"
-            android:layout_width="match_parent"
+        <RadioGroup
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="8dp"
-            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
-            android:textSize="@dimen/text_size"
-            android:text="@string/hermione_grainger"
-            android:onClick="toastMessage10"/>
+            android:orientation="vertical"
+            android:paddingLeft="8dp">
 
-        <CheckBox
-            android:id="@+id/incorrect_answer_nineteen"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="8dp"
-            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
-            android:textSize="@dimen/text_size"
-            android:text="@string/albus_dumbledore"
-            android:onClick="toastMessage10"/>
+            <RadioButton
+                android:id="@+id/correct_answer_ten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hermione_grainger"
+                android:onClick="toastMessage10"/>
 
-        <CheckBox
-            android:id="@+id/incorrect_answer_twenty"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="8dp"
-            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
-            android:textSize="@dimen/text_size"
-            android:text="@string/professor_umbridge"
-            android:onClick="toastMessage10"/>
+            <RadioButton
+                android:id="@+id/incorrect_answer_nineteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/albus_dumbledore"
+                android:onClick="toastMessage10"/>
+
+            <RadioButton
+                android:id="@+id/incorrect_answer_twenty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/professor_umbridge"
+                android:onClick="toastMessage10"/>
+
+        </RadioGroup>
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/correct_answer_ten"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="8dp"-->
+            <!--android:layout_marginLeft="@dimen/text_view_checkbox_margin"-->
+            <!--android:textSize="@dimen/text_size"-->
+            <!--android:text="@string/hermione_grainger"-->
+            <!--android:onClick="toastMessage10"/>-->
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/incorrect_answer_nineteen"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="8dp"-->
+            <!--android:layout_marginLeft="@dimen/text_view_checkbox_margin"-->
+            <!--android:textSize="@dimen/text_size"-->
+            <!--android:text="@string/albus_dumbledore"-->
+            <!--android:onClick="toastMessage10"/>-->
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/incorrect_answer_twenty"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="8dp"-->
+            <!--android:layout_marginLeft="@dimen/text_view_checkbox_margin"-->
+            <!--android:textSize="@dimen/text_size"-->
+            <!--android:text="@string/professor_umbridge"-->
+            <!--android:onClick="toastMessage10"/>-->
 
         <!-- Question 11 -->
 
@@ -127,35 +185,64 @@
             android:layout_marginLeft="@dimen/text_view_checkbox_margin"
             android:text="@string/question11"/>
 
-        <CheckBox
-            android:id="@+id/incorrect_answer_twenty_one"
-            android:layout_width="match_parent"
+        <RadioGroup
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="8dp"
-            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
-            android:textSize="@dimen/text_size"
-            android:text="@string/accio"
-            android:onClick="toastMessage11"/>
+            android:orientation="vertical"
+            android:paddingLeft="8dp">
 
-        <CheckBox
-            android:id="@+id/incorrect_answer_twenty_two"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="8dp"
-            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
-            android:textSize="@dimen/text_size"
-            android:text="@string/alohomora"
-            android:onClick="toastMessage11"/>
+            <RadioButton
+                android:id="@+id/incorrect_answer_twentyone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/accio"
+                android:onClick="toastMessage11"/>
 
-        <CheckBox
-            android:id="@+id/correct_answer_eleven"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="8dp"
-            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
-            android:textSize="@dimen/text_size"
-            android:text="@string/stinging_jinx"
-            android:onClick="toastMessage11"/>
+            <RadioButton
+                android:id="@+id/incorrect_answer_twentytwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alohomora"
+                android:onClick="toastMessage11"/>
+
+            <RadioButton
+                android:id="@+id/correct_answer_eleven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stinging_jinx"
+                android:onClick="toastMessage11"/>
+
+        </RadioGroup>
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/incorrect_answer_twenty_one"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="8dp"-->
+            <!--android:layout_marginLeft="@dimen/text_view_checkbox_margin"-->
+            <!--android:textSize="@dimen/text_size"-->
+            <!--android:text="@string/accio"-->
+            <!--android:onClick="toastMessage11"/>-->
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/incorrect_answer_twenty_two"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="8dp"-->
+            <!--android:layout_marginLeft="@dimen/text_view_checkbox_margin"-->
+            <!--android:textSize="@dimen/text_size"-->
+            <!--android:text="@string/alohomora"-->
+            <!--android:onClick="toastMessage11"/>-->
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/correct_answer_eleven"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="8dp"-->
+            <!--android:layout_marginLeft="@dimen/text_view_checkbox_margin"-->
+            <!--android:textSize="@dimen/text_size"-->
+            <!--android:text="@string/stinging_jinx"-->
+            <!--android:onClick="toastMessage11"/>-->
 
         <!-- Question 12 -->
 
@@ -177,35 +264,64 @@
             android:layout_marginLeft="@dimen/text_view_checkbox_margin"
             android:text="@string/question12"/>
 
-        <CheckBox
-            android:id="@+id/incorrect_answer_twenty_three"
-            android:layout_width="match_parent"
+        <RadioGroup
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="8dp"
-            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
-            android:textSize="@dimen/text_size"
-            android:text="@string/alihosty_draught"
-            android:onClick="toastMessage12"/>
+            android:orientation="vertical"
+            android:paddingLeft="8dp">
 
-        <CheckBox
-            android:id="@+id/correct_answer_twelve"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="8dp"
-            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
-            android:textSize="@dimen/text_size"
-            android:text="@string/amortentia"
-            android:onClick="toastMessage12"/>
+            <RadioButton
+                android:id="@+id/incorrect_answer_twentythree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alihosty_draught"
+                android:onClick="toastMessage12"/>
 
-        <CheckBox
-            android:id="@+id/incorrect_answer_twenty_four"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="8dp"
-            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
-            android:textSize="@dimen/text_size"
-            android:text="@string/equinox"
-            android:onClick="toastMessage12"/>
+            <RadioButton
+                android:id="@+id/correct_answer_twelve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amortentia"
+                android:onClick="toastMessage12"/>
+
+            <RadioButton
+                android:id="@+id/incorrect_answer_twentyfour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/equinox"
+                android:onClick="toastMessage12"/>
+
+        </RadioGroup>
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/incorrect_answer_twenty_three"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="8dp"-->
+            <!--android:layout_marginLeft="@dimen/text_view_checkbox_margin"-->
+            <!--android:textSize="@dimen/text_size"-->
+            <!--android:text="@string/alihosty_draught"-->
+            <!--android:onClick="toastMessage12"/>-->
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/correct_answer_twelve"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="8dp"-->
+            <!--android:layout_marginLeft="@dimen/text_view_checkbox_margin"-->
+            <!--android:textSize="@dimen/text_size"-->
+            <!--android:text="@string/amortentia"-->
+            <!--android:onClick="toastMessage12"/>-->
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/incorrect_answer_twenty_four"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="8dp"-->
+            <!--android:layout_marginLeft="@dimen/text_view_checkbox_margin"-->
+            <!--android:textSize="@dimen/text_size"-->
+            <!--android:text="@string/equinox"-->
+            <!--android:onClick="toastMessage12"/>-->
 
         <RelativeLayout
             android:layout_width="match_parent"
