@@ -24,7 +24,7 @@
     <string name="question_4">Question 4</string>
 
     <!-- Second Activity Questions Page Strings -->
-    <string name="question5">What is the name of the Ministry of Magic employeen that Ron inpersonates using the Polyjuice potion?</string>
+    <string name="question5">What is the name of the Ministry of Magic employee that Ron impersonates using the Polyjuice potion?</string>
     <string name="question_5">Question 5</string>
     <string name="reg_cattermole">Reg Cattermole</string>
     <string name="albert_runcorn">Albert Runcorn</string>
@@ -46,7 +46,7 @@
 
     <!-- Third Questions Activity Page -->
     <string name="question_9">Question 9</string>
-    <string name="question9">Haryy first Apparated alongside whom?</string>
+    <string name="question9">Haryy first apparated alongside whom?</string>
     <string name="ron_weasely">Ron Weasely</string>
     <string name="hagrid">Hagrid</string>
     <string name="professor_dumbledore">Professor Dumbledore</string>

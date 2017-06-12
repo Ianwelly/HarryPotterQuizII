@@ -18,32 +18,28 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#607D8B"
-
-        >
+        android:background="#607D8B">
 
         <TextView
             android:id="@+id/text_view_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:textSize="32dp"
+            android:gravity="center"
             android:text="@string/intro_text"
-            android:gravity="center"/>
+            android:textSize="32dp" />
 
         <Button
             android:id="@+id/enter_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text="@string/home_page_button"
-            android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
-            android:textSize="@dimen/button_text_size"
-            android:onClick="first_question_page"/>
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:onClick="first_question_page"
+            android:text="@string/home_page_button"
+            android:textSize="@dimen/button_text_size" />
 
     </RelativeLayout>
-
-
 
 </LinearLayout>

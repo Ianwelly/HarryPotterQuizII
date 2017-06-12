@@ -29,15 +29,9 @@ public class SecondQuestionsPageActivity extends AppCompatActivity {
         Typeface harryPTypeFace = Typeface.createFromAsset(getAssets(), "HARRYP__.TTF");
         Button btn = (Button) findViewById(R.id.enter_button_2);
         btn.setTypeface(harryPTypeFace);
-
-
     }
 
-    public void toastMessage5 (View view) {
-//        CheckBox cb13 = (CheckBox) findViewById(R.id.correct_answer_five);
-//        CheckBox cb14 = (CheckBox) findViewById(R.id.incorrect_answer_nine);
-//        CheckBox cb15 = (CheckBox) findViewById(R.id.incorrect_answer_ten);
-
+    public void toastMessage5(View view) {
         RadioButton answerFive_btOne = (RadioButton) findViewById(R.id.correct_answer_five);
         RadioButton answerFive_btTwo = (RadioButton) findViewById(incorrect_answer_nine);
         RadioButton answerFive_btThree = (RadioButton) findViewById(R.id.incorrect_answer_ten);
@@ -45,10 +39,9 @@ public class SecondQuestionsPageActivity extends AppCompatActivity {
         boolean correctAnswerFive = answerFive_btOne.isChecked();
 
         if (correctAnswerFive) {
-            Total = Total +1;
+            Total = Total + 1;
             answerFive_btOne.setTextColor(Color.GREEN);
         } else {
-            Total = Total;
             answerFive_btOne.setTextColor(Color.GREEN);
             answerFive_btTwo.setTextColor(Color.RED);
             answerFive_btThree.setTextColor(Color.RED);
@@ -65,22 +58,7 @@ public class SecondQuestionsPageActivity extends AppCompatActivity {
         }
     }
 
-        // Question 5 if statements for toasts
-//        if (cb13.isChecked()) {
-//            Toast.makeText(this, "Correct answer!", Toast.LENGTH_SHORT).show();
-//        }
-//        if (cb14.isChecked()) {
-//            Toast.makeText(this, "Incorrect answer!", Toast.LENGTH_SHORT).show();
-//        }
-//        if (cb15.isChecked()) {
-//            Toast.makeText(this, "Incorrect answer", Toast.LENGTH_SHORT).show();
-//        }
-//    }
-
-    public void toastMessage6 (View view) {
-//        CheckBox cb16 = (CheckBox) findViewById(R.id.correct_answer_six);
-//        CheckBox cb17 = (CheckBox) findViewById(R.id.incorrect_answer_eleven);
-//        CheckBox cb18 = (CheckBox) findViewById(R.id.incorrect_answer_twelve);
+    public void toastMessage6(View view) {
 
         RadioButton answerSix_btOne = (RadioButton) findViewById(R.id.incorrect_answer_eleven);
         RadioButton answerSix_btTwo = (RadioButton) findViewById(incorrect_answer_twelve);
@@ -89,7 +67,7 @@ public class SecondQuestionsPageActivity extends AppCompatActivity {
         boolean correctAnswerSix = answerSix_btThree.isChecked();
 
         if (correctAnswerSix) {
-            Total = Total +1;
+            Total = Total + 1;
             answerSix_btThree.setTextColor(Color.GREEN);
         } else {
             Total = Total;
@@ -109,24 +87,7 @@ public class SecondQuestionsPageActivity extends AppCompatActivity {
         }
     }
 
-
-        // Question 6 if statements or toasts
-
-//        if (cb16.isChecked()) {
-//            Toast.makeText(this, "Correct answer!", Toast.LENGTH_SHORT).show();
-//        }
-//        if (cb17.isChecked()) {
-//            Toast.makeText(this, "Incorrect answer!", Toast.LENGTH_SHORT).show();
-//        }
-//        if (cb18.isChecked()) {
-//            Toast.makeText(this, "Incorrect answer", Toast.LENGTH_SHORT).show();
-//        }
-
-
-    public void toastMessage7 (View view) {
-//        CheckBox cb19 = (CheckBox) findViewById(R.id.correct_answer_seven);
-//        CheckBox cb20 = (CheckBox) findViewById(R.id.incorrect_answer_thirteen);
-//        CheckBox cb21 = (CheckBox) findViewById(R.id.incorrect_answer_fourteen);
+    public void toastMessage7(View view) {
 
         RadioButton answerSeven_btOne = (RadioButton) findViewById(R.id.correct_answer_seven);
         RadioButton answerSeven_btTwo = (RadioButton) findViewById(incorrect_answer_thirteen);
@@ -135,7 +96,7 @@ public class SecondQuestionsPageActivity extends AppCompatActivity {
         boolean correctAnswerSeven = answerSeven_btOne.isChecked();
 
         if (correctAnswerSeven) {
-            Total = Total +1;
+            Total = Total + 1;
             answerSeven_btOne.setTextColor(Color.GREEN);
         } else {
             Total = Total;
@@ -154,25 +115,8 @@ public class SecondQuestionsPageActivity extends AppCompatActivity {
             Toast.makeText(this, "Inorrect answer", Toast.LENGTH_SHORT).show();
         }
     }
-//
-//        //Question 7 if statements for toasts
-//
-//        if (cb19.isChecked()) {
-//            Toast.makeText(this, "Correct answer!", Toast.LENGTH_SHORT).show();
-//        }
-//        if (cb20.isChecked()) {
-//            Toast.makeText(this, "Incorrect answer!", Toast.LENGTH_SHORT).show();
-//        }
-//        if (cb21.isChecked()) {
-//            Toast.makeText(this, "Incorrect answer", Toast.LENGTH_SHORT).show();
-//        }
-//    }
 
-    public void toastMessage8 (View view) {
-//        CheckBox cb22 = (CheckBox) findViewById(R.id.correct_answer_eight);
-//        CheckBox cb23 = (CheckBox) findViewById(R.id.incorrect_answer_fifteen);
-//        CheckBox cb24 = (CheckBox) findViewById(R.id.incorrect_answer_sixteen);
-
+    public void toastMessage8(View view) {
         RadioButton answerEight_btOne = (RadioButton) findViewById(R.id.incorrect_answer_fifteen);
         RadioButton answerEight_btTwo = (RadioButton) findViewById(incorrect_answer_sixteen);
         RadioButton answerEight_btThree = (RadioButton) findViewById(R.id.correct_answer_eight);
@@ -180,10 +124,10 @@ public class SecondQuestionsPageActivity extends AppCompatActivity {
         boolean correctAnswerEight = answerEight_btThree.isChecked();
 
         if (correctAnswerEight) {
-            Total = Total +1;
+            Total = Total + 1;
             answerEight_btThree.setTextColor(Color.GREEN);
         } else {
-            Total = Total;
+
             answerEight_btOne.setTextColor(Color.RED);
             answerEight_btTwo.setTextColor(Color.RED);
             answerEight_btThree.setTextColor(Color.GREEN);
@@ -199,63 +143,12 @@ public class SecondQuestionsPageActivity extends AppCompatActivity {
             Toast.makeText(this, "Correct answer", Toast.LENGTH_SHORT).show();
         }
     }
-//
-//        //Question 8 if statements for toasts
-//
-//        if (cb22.isChecked()) {
-//            Toast.makeText(this, "Correct answer!", Toast.LENGTH_SHORT).show();
-//        }
-//        if (cb23.isChecked()) {
-//            Toast.makeText(this, "Incorrect answer!", Toast.LENGTH_SHORT).show();
-//        }
-//        if (cb24.isChecked()) {
-//            Toast.makeText(this, "Incorrect answer", Toast.LENGTH_SHORT).show();
-//        }
-//    }
-
 
     public void third_question_page(View view) {
         Intent intentTwo = new Intent(this, ThirdQuestionsPageActivity.class);
 
-//        CheckBox firstAnswerCheckbox = (CheckBox) findViewById(R.id.correct_answer_five);
-//        if (firstAnswerCheckbox.isChecked()) {
-//            Total = Total + 1;
-//        } else {
-//            Total = Total;
-//        }
-//
-//        Log.v("SecondQuestionsPage", "Score is " + Total);
-//
-//        CheckBox secondAnswerCheckbox = (CheckBox) findViewById(R.id.correct_answer_six);
-//        if (secondAnswerCheckbox.isChecked()) {
-//            Total = Total + 1;
-//        } else {
-//            Total = Total;
-//        }
-//
-//        Log.v("SecondQuestionsPage", "Score is " + Total);
-//
-//        CheckBox thirdAnswerCheckbox = (CheckBox) findViewById(R.id.correct_answer_seven);
-//        if (thirdAnswerCheckbox.isChecked()) {
-//            Total += 1;
-//        } else {
-//            Total = Total;
-//        }
-//
-//        Log.v("SecondQuestionsPage", "Score is " + Total);
-//
-//        CheckBox fourthAnswerCheckbox = (CheckBox) findViewById(R.id.correct_answer_eight);
-//        if (fourthAnswerCheckbox.isChecked()) {
-//            Total += 1;
-//        } else {
-//            Total = Total;
-//        }
-//        Log.v("SecondQuestionsPage", "Score" + Total);
-
         intentTwo.putExtra("RunningTotal", Total);
         startActivity(intentTwo);
-
-
     }
 }
 

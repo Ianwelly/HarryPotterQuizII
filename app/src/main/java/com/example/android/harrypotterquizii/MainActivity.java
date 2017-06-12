@@ -1,12 +1,12 @@
 package com.example.android.harrypotterquizii;
 
-import android.content.Intent;
-import android.graphics.Typeface;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
+        import android.content.Intent;
+        import android.graphics.Typeface;
+        import android.os.Bundle;
+        import android.support.v7.app.AppCompatActivity;
+        import android.view.View;
+        import android.widget.Button;
+        import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
         btn.setTypeface(harryPTypeFace);
     }
 
-    public void first_question_page (View view){
-        Intent intent = new Intent (this, FirstQuestionsPageActivity.class);
+    public void first_question_page(View view) {
+        Intent intent = new Intent(this, FirstQuestionsPageActivity.class);
         startActivity(intent);
     }
 }
