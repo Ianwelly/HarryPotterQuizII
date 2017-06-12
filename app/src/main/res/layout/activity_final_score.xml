@@ -13,7 +13,7 @@
         android:textAlignment="center"
         android:layout_centerInParent="true"
         android:textSize="40sp"
-        android:text="Congratulations!! \n Your final score is. "
+        android:text="@string/final_score_text"
         />
 
     <TextView
@@ -24,6 +24,15 @@
         android:layout_below="@+id/congrats"
         android:layout_margin="8dp"
         android:textSize="40sp"
-        android:text=""/>
+        tools:text="0"/>
+
+    <TextView
+        android:id="@+id/lastTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/out_of_12"
+        android:textSize="40sp"
+        android:layout_below="@+id/FinalScore"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

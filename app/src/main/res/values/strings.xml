@@ -46,7 +46,7 @@
 
     <!-- Third Questions Activity Page -->
     <string name="question_9">Question 9</string>
-    <string name="question9">Haryy first apparated alongside whom?</string>
+    <string name="question9">Harry first apparated alongside whom?</string>
     <string name="ron_weasely">Ron Weasely</string>
     <string name="hagrid">Hagrid</string>
     <string name="professor_dumbledore">Professor Dumbledore</string>
@@ -66,6 +66,8 @@
     <string name="amortentia">Amortentia</string>
     <string name="equinox">Equinox</string>
     <string name="intro_text">Welcome to the Harry Potter Quiz!\nThese questions were set by:\nKezia the Witch\nRosie the Hobbit\nand Lilia the Elf!\nEnjoy</string>
+    <string name="final_score_text">Congratulations!!   Your final score is</string>
+    <string name="out_of_12">out of 12.</string>
 
 
 </resources>
