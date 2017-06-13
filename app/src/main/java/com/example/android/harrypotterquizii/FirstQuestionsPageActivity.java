@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
@@ -25,10 +26,7 @@ public class FirstQuestionsPageActivity extends AppCompatActivity {
 
     public void toastMessage1(View view) {
 
-        // Question 1 if statements for toasts
-        /*
-        Question 1
-         */
+        // Question 1 if statements
 
         RadioButton answerOne_btOne = (RadioButton) findViewById(R.id.correct_answer_one);
         RadioButton answerOne_btTwo = (RadioButton) findViewById(R.id.incorrect_answer_one);
@@ -40,7 +38,6 @@ public class FirstQuestionsPageActivity extends AppCompatActivity {
             Total = Total + 1;
             answerOne_btOne.setTextColor(Color.GREEN);
         } else {
-            Total = Total;
             answerOne_btOne.setTextColor(Color.GREEN);
             answerOne_btTwo.setTextColor(Color.RED);
             answerOne_btThree.setTextColor(Color.RED);
@@ -57,6 +54,8 @@ public class FirstQuestionsPageActivity extends AppCompatActivity {
         }
     }
 
+    //Question 2 if Statements
+
     public void toastMessage2(View view) {
 
         RadioButton answerTwo_btOne = (RadioButton) findViewById(R.id.incorrect_answer_three);
@@ -69,7 +68,6 @@ public class FirstQuestionsPageActivity extends AppCompatActivity {
             Total = Total + 1;
             answerTwo_btThree.setTextColor(Color.GREEN);
         } else {
-            Total = Total;
             answerTwo_btOne.setTextColor(Color.RED);
             answerTwo_btTwo.setTextColor(Color.RED);
             answerTwo_btThree.setTextColor(Color.GREEN);
@@ -86,6 +84,7 @@ public class FirstQuestionsPageActivity extends AppCompatActivity {
         }
     }
 
+    //Question 3 if statements
     public void toastMessage3(View view) {
 
         RadioButton answerThree_btOne = (RadioButton) findViewById(R.id.incorrect_answer_five);
@@ -113,39 +112,41 @@ public class FirstQuestionsPageActivity extends AppCompatActivity {
         }
     }
 
+    //Question 4 if statements
+
     public void toastMessage4(View view) {
-        RadioButton answerFour_btOne = (RadioButton) findViewById(R.id.incorrect_answer_seven);
-        RadioButton answerFour_btTwo = (RadioButton) findViewById(R.id.correct_answer_four);
-        RadioButton answerFour_btThree = (RadioButton) findViewById(R.id.correct_answer_eight);
+//        RadioButton answerFour_btOne = (RadioButton) findViewById(R.id.incorrect_answer_seven);
+//        RadioButton answerFour_btTwo = (RadioButton) findViewById(R.id.correct_answer_four);
+//        RadioButton answerFour_btThree = (RadioButton) findViewById(R.id.incorrect_answer_eight);
 
-        boolean correctAnswerFour = answerFour_btTwo.isChecked();
+        CheckBox answerFour_btOne = (CheckBox) findViewById(R.id.incorrect_answer_seven);
+        CheckBox answerFour_btTwo = (CheckBox) findViewById(R.id.correct_answer_four);
+        CheckBox answerFour_btThree = (CheckBox) findViewById(R.id.incorrect_answer_eight);
 
-        if (correctAnswerFour) {
+        boolean firstCorrectAnswerFour = answerFour_btTwo.isChecked() && answerFour_btThree.isChecked();
+
+        if (firstCorrectAnswerFour) {
+
             Total = Total + 1;
             answerFour_btTwo.setTextColor(Color.GREEN);
-        } else {
-            Total = Total;
+            answerFour_btThree.setTextColor(Color.GREEN);
+            Toast.makeText(this, "Correct answer", Toast.LENGTH_SHORT).show();
+        } else if (answerFour_btOne.isChecked() && answerFour_btTwo.isChecked()) {
             answerFour_btOne.setTextColor(Color.RED);
-            answerFour_btTwo.setTextColor(Color.GREEN);
+            answerFour_btTwo.setTextColor(Color.RED);
+            Toast.makeText(this, "Sorry, those two answers were wrong", Toast.LENGTH_SHORT).show();
+        } else if (answerFour_btOne.isChecked() && answerFour_btThree.isChecked()) {
+            answerFour_btOne.setTextColor(Color.RED);
             answerFour_btThree.setTextColor(Color.RED);
-        }
-
-        if (answerFour_btOne.isChecked()) {
-            Toast.makeText(this, "Incorrect answer!", Toast.LENGTH_SHORT).show();
-        }
-        if (answerFour_btTwo.isChecked()) {
-            Toast.makeText(this, "Correct answer!", Toast.LENGTH_SHORT).show();
-        }
-        if (answerFour_btThree.isChecked()) {
-            Toast.makeText(this, "Incorrect answer", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Sorry, those two answers are wrong", Toast.LENGTH_SHORT).show();
         }
     }
 
+    //Intent for transitioning to second page of questions.
+
     public void second_question_page(View view) {
         Intent intentOne = new Intent(this, SecondQuestionsPageActivity.class);
-
         intentOne.putExtra("RunningTotal", Total);
         startActivity(intentOne);
-
     }
 }

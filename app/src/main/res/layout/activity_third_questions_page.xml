@@ -1,219 +1,229 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/parchment"
-    android:orientation="vertical"
-    tools:context="com.example.android.harrypotterquizii.ThirdQuestionsPageActivity">
-
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/text_view_checkbox_margin"
-        android:text="@string/question_9"
-        android:textSize="@dimen/question_text_size"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/text_view_checkbox_margin"
-        android:text="@string/question9"
-        android:textSize="@dimen/text_size" />
-
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/parchment"
         android:orientation="vertical"
-        android:paddingLeft="8dp">
+        android:weightSum="1"
+        tools:context="com.example.android.harrypotterquizii.ThirdQuestionsPageActivity">
 
-        <RadioButton
-            android:id="@+id/incorrect_answer_seventeen"
+        <!-- Question 9 -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
+            android:text="@string/question_9"
+            android:textSize="@dimen/question_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
+            android:text="@string/question9"
+            android:textSize="@dimen/text_size" />
+
+        <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="toastMessage9"
-            android:text="@string/ron_weasely" />
+            android:orientation="vertical"
+            android:paddingLeft="8dp">
 
-        <RadioButton
-            android:id="@+id/incorrect_answer_eighteen"
+            <RadioButton
+                android:id="@+id/incorrect_answer_seventeen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="toastMessage9"
+                android:text="@string/ron_weasely" />
+
+            <RadioButton
+                android:id="@+id/incorrect_answer_eighteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="toastMessage9"
+                android:text="@string/hagrid" />
+
+            <RadioButton
+                android:id="@+id/correct_answer_nine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="toastMessage9"
+                android:text="@string/professor_dumbledore" />
+
+        </RadioGroup>
+
+        <!-- Question 10 -->
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
+            android:layout_marginTop="8dp"
+            android:text="@string/question_10"
+            android:textSize="@dimen/question_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
+            android:text="@string/question10"
+            android:textSize="@dimen/text_size" />
+
+        <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="toastMessage9"
-            android:text="@string/hagrid" />
+            android:orientation="vertical"
+            android:paddingLeft="8dp">
 
-        <RadioButton
-            android:id="@+id/correct_answer_nine"
+            <RadioButton
+                android:id="@+id/correct_answer_ten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="toastMessage10"
+                android:text="@string/hermione_grainger" />
+
+            <RadioButton
+                android:id="@+id/incorrect_answer_nineteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="toastMessage10"
+                android:text="@string/albus_dumbledore" />
+
+            <RadioButton
+                android:id="@+id/incorrect_answer_twenty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="toastMessage10"
+                android:text="@string/professor_umbridge" />
+
+        </RadioGroup>
+
+        <!-- Question 11 -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
+            android:layout_marginTop="8dp"
+            android:text="@string/question_11"
+            android:textSize="@dimen/question_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
+            android:text="@string/question11"
+            android:textSize="@dimen/text_size" />
+
+        <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="toastMessage9"
-            android:text="@string/professor_dumbledore" />
+            android:orientation="vertical"
+            android:paddingLeft="8dp">
 
-    </RadioGroup>
+            <RadioButton
+                android:id="@+id/incorrect_answer_twentyone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/accio" />
 
-    <!-- Question 10 -->
+            <RadioButton
+                android:id="@+id/incorrect_answer_twentytwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="toastMessage11"
+                android:text="@string/alohomora" />
 
-    <TextView
+            <RadioButton
+                android:id="@+id/correct_answer_eleven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="toastMessage11"
+                android:text="@string/stinging_jinx" />
 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/text_view_checkbox_margin"
-        android:layout_marginTop="8dp"
-        android:text="@string/question_10"
-        android:textSize="@dimen/question_text_size"
-        android:textStyle="bold" />
+        </RadioGroup>
 
-    <TextView
+        <!-- Question 12 -->
 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/text_view_checkbox_margin"
-        android:text="@string/question10"
-        android:textSize="@dimen/text_size" />
-
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingLeft="8dp">
-
-        <RadioButton
-            android:id="@+id/correct_answer_ten"
-            android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="toastMessage10"
-            android:text="@string/hermione_grainger" />
+            android:layout_marginLeft="@dimen/text_view_checkbox_margin"
+            android:layout_marginTop="8dp"
+            android:text="@string/question_12"
+            android:textSize="@dimen/question_text_size"
+            android:textStyle="bold" />
 
-        <RadioButton
-            android:id="@+id/incorrect_answer_nineteen"
-            android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="toastMessage10"
-            android:text="@string/albus_dumbledore" />
+            android:layout_margin="8dp"
+            android:text="@string/question12"
+            android:textSize="@dimen/text_size" />
 
-        <RadioButton
-            android:id="@+id/incorrect_answer_twenty"
-            android:layout_width="wrap_content"
+        <ImageView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="toastMessage10"
-            android:text="@string/professor_umbridge" />
+            android:layout_marginTop="8dp"
+            android:paddingBottom="24dp"
+            android:src="@drawable/moaning_myrtle" />
 
-    </RadioGroup>
-
-    <!-- Question 11 -->
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/text_view_checkbox_margin"
-        android:layout_marginTop="8dp"
-        android:text="@string/question_11"
-        android:textSize="@dimen/question_text_size"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/text_view_checkbox_margin"
-        android:text="@string/question11"
-        android:textSize="@dimen/text_size" />
-
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingLeft="8dp">
-
-        <RadioButton
-            android:id="@+id/incorrect_answer_twentyone"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="toastMessage11"
-            android:text="@string/accio" />
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
 
-        <RadioButton
-            android:id="@+id/incorrect_answer_twentytwo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="toastMessage11"
-            android:text="@string/alohomora" />
+            <EditText
+                android:id="@+id/edit_text_myrtle"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:background="#FFF"
+                android:backgroundTint="#FFB74D"
+                android:hint="Please enter answer"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textAlignment="center" />
 
-        <RadioButton
-            android:id="@+id/correct_answer_eleven"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="toastMessage11"
-            android:text="@string/stinging_jinx" />
+            <Button
+                android:id="@+id/button_myrtle_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="16dp"
+                android:onClick="toastMessage12"
+                android:text="enter answer" />
 
-    </RadioGroup>
+        </LinearLayout>
 
-    <!-- Question 12 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/text_view_checkbox_margin"
-        android:layout_marginTop="8dp"
-        android:text="@string/question_12"
-        android:textSize="@dimen/question_text_size"
-        android:textStyle="bold" />
+            <Button
+                android:id="@+id/enter_button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:onClick="final_score_page"
+                android:text="@string/QuestionPage_One_Enter_Button"
+                android:textSize="@dimen/button_text_size" />
+        </RelativeLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/text_view_checkbox_margin"
-        android:text="@string/question12"
-        android:textSize="@dimen/text_size" />
+    </LinearLayout>
 
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingLeft="8dp">
-
-        <RadioButton
-            android:id="@+id/incorrect_answer_twentythree"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="toastMessage12"
-            android:text="@string/alihosty_draught" />
-
-        <RadioButton
-            android:id="@+id/correct_answer_twelve"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="toastMessage12"
-            android:text="@string/amortentia" />
-
-        <RadioButton
-            android:id="@+id/incorrect_answer_twentyfour"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="toastMessage12"
-            android:text="@string/equinox" />
-
-    </RadioGroup>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:id="@+id/enter_button_3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="16dp"
-            android:onClick="final_score_page"
-            android:text="@string/QuestionPage_One_Enter_Button"
-            android:textSize="@dimen/button_text_size" />
-    </RelativeLayout>
-
-</LinearLayout>
 </ScrollView>

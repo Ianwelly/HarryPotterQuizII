@@ -1,19 +1,19 @@
 package com.example.android.harrypotterquizii;
 
-import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.Typeface;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.Button;
-import android.widget.RadioButton;
-import android.widget.Toast;
+        import android.content.Intent;
+        import android.graphics.Color;
+        import android.graphics.Typeface;
+        import android.os.Bundle;
+        import android.support.v7.app.AppCompatActivity;
+        import android.view.View;
+        import android.widget.Button;
+        import android.widget.RadioButton;
+        import android.widget.Toast;
 
-import static com.example.android.harrypotterquizii.R.id.incorrect_answer_nine;
-import static com.example.android.harrypotterquizii.R.id.incorrect_answer_sixteen;
-import static com.example.android.harrypotterquizii.R.id.incorrect_answer_thirteen;
-import static com.example.android.harrypotterquizii.R.id.incorrect_answer_twelve;
+        import static com.example.android.harrypotterquizii.R.id.incorrect_answer_nine;
+        import static com.example.android.harrypotterquizii.R.id.incorrect_answer_sixteen;
+        import static com.example.android.harrypotterquizii.R.id.incorrect_answer_thirteen;
+        import static com.example.android.harrypotterquizii.R.id.incorrect_answer_twelve;
 
 public class SecondQuestionsPageActivity extends AppCompatActivity {
 
@@ -23,13 +23,14 @@ public class SecondQuestionsPageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second_questions_page);
-
         Intent intentOne = getIntent();
         Total = intentOne.getIntExtra("RunningTotal", 0);
         Typeface harryPTypeFace = Typeface.createFromAsset(getAssets(), "HARRYP__.TTF");
         Button btn = (Button) findViewById(R.id.enter_button_2);
         btn.setTypeface(harryPTypeFace);
     }
+
+    //Question 5 if statements
 
     public void toastMessage5(View view) {
         RadioButton answerFive_btOne = (RadioButton) findViewById(R.id.correct_answer_five);
@@ -58,6 +59,8 @@ public class SecondQuestionsPageActivity extends AppCompatActivity {
         }
     }
 
+    //Question 6 statements
+
     public void toastMessage6(View view) {
 
         RadioButton answerSix_btOne = (RadioButton) findViewById(R.id.incorrect_answer_eleven);
@@ -70,7 +73,6 @@ public class SecondQuestionsPageActivity extends AppCompatActivity {
             Total = Total + 1;
             answerSix_btThree.setTextColor(Color.GREEN);
         } else {
-            Total = Total;
             answerSix_btOne.setTextColor(Color.RED);
             answerSix_btTwo.setTextColor(Color.RED);
             answerSix_btThree.setTextColor(Color.GREEN);
@@ -87,6 +89,8 @@ public class SecondQuestionsPageActivity extends AppCompatActivity {
         }
     }
 
+    //Question 7 if statements
+
     public void toastMessage7(View view) {
 
         RadioButton answerSeven_btOne = (RadioButton) findViewById(R.id.correct_answer_seven);
@@ -99,7 +103,6 @@ public class SecondQuestionsPageActivity extends AppCompatActivity {
             Total = Total + 1;
             answerSeven_btOne.setTextColor(Color.GREEN);
         } else {
-            Total = Total;
             answerSeven_btOne.setTextColor(Color.GREEN);
             answerSeven_btTwo.setTextColor(Color.RED);
             answerSeven_btThree.setTextColor(Color.RED);
@@ -116,6 +119,8 @@ public class SecondQuestionsPageActivity extends AppCompatActivity {
         }
     }
 
+    //Question 8 if statements
+
     public void toastMessage8(View view) {
         RadioButton answerEight_btOne = (RadioButton) findViewById(R.id.incorrect_answer_fifteen);
         RadioButton answerEight_btTwo = (RadioButton) findViewById(incorrect_answer_sixteen);
@@ -127,7 +132,6 @@ public class SecondQuestionsPageActivity extends AppCompatActivity {
             Total = Total + 1;
             answerEight_btThree.setTextColor(Color.GREEN);
         } else {
-
             answerEight_btOne.setTextColor(Color.RED);
             answerEight_btTwo.setTextColor(Color.RED);
             answerEight_btThree.setTextColor(Color.GREEN);

@@ -1,4 +1,5 @@
 <resources>
+    <!--First Activity Question Page Strings-->
     <string name="app_name">HarryPotterQuizII</string>
     <string name="home_page_button">enter</string>
     <string name="Question_1">What time does the Hogwarts Express leave platform 9 3/4?</string>
@@ -13,7 +14,7 @@
     <string name="dave">Dave</string>
     <string name="scabbers">Scabbers</string>
     <string name="najini">Najini</string>
-    <string name="question4">How many horcruxes were there?</string>
+    <string name="question4">Which of these characters are in Hufflepuff house?</string>
     <string name="_4">4</string>
     <string name="_7">7</string>
     <string name="_10">10</string>
@@ -61,13 +62,12 @@
     <string name="alohomora">Alohomora</string>
     <string name="stinging_jinx">Stinging Jinx</string>
     <string name="question_12">Question 12</string>
-    <string name="question12">What is the name of the most powerful love potion in the world that Professor Slughorn introduces the class to in his first lesson?</string>
-    <string name="alihosty_draught">Alihosty Draught</string>
-    <string name="amortentia">Amortentia</string>
-    <string name="equinox">Equinox</string>
+    <string name="question12">Who is this?</string>
+    <string name="alihosty_draught">Luna Lovegood</string>
+    <string name="amortentia">Moaning Myrtle</string>
+    <string name="equinox">Leta Lestrange</string>
     <string name="intro_text">Welcome to the Harry Potter Quiz!\nThese questions were set by:\nKezia the Witch\nRosie the Hobbit\nand Lilia the Elf!\nEnjoy</string>
     <string name="final_score_text">Congratulations!!   Your final score is</string>
     <string name="out_of_12">out of 12.</string>
-
 
 </resources>

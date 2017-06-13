@@ -1,17 +1,18 @@
 package com.example.android.harrypotterquizii;
 
-import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.Typeface;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.Button;
-import android.widget.RadioButton;
-import android.widget.Toast;
+        import android.content.Intent;
+        import android.graphics.Color;
+        import android.graphics.Typeface;
+        import android.os.Bundle;
+        import android.support.v7.app.AppCompatActivity;
+        import android.view.View;
+        import android.widget.Button;
+        import android.widget.EditText;
+        import android.widget.RadioButton;
+        import android.widget.Toast;
 
-import static com.example.android.harrypotterquizii.R.id.incorrect_answer_eighteen;
-import static com.example.android.harrypotterquizii.R.id.incorrect_answer_nineteen;
+        import static com.example.android.harrypotterquizii.R.id.incorrect_answer_eighteen;
+        import static com.example.android.harrypotterquizii.R.id.incorrect_answer_nineteen;
 
 public class ThirdQuestionsPageActivity extends AppCompatActivity {
     int Total = 0;
@@ -27,6 +28,8 @@ public class ThirdQuestionsPageActivity extends AppCompatActivity {
         Button btn = (Button) findViewById(R.id.enter_button_3);
         btn.setTypeface(harryPTypeFace);
     }
+
+    //Question 9 if statements
 
     public void toastMessage9(View view) {
 
@@ -57,6 +60,8 @@ public class ThirdQuestionsPageActivity extends AppCompatActivity {
         }
     }
 
+    //Question 10 if statements
+
     public void toastMessage10(View view) {
 
         RadioButton answerTen_btOne = (RadioButton) findViewById(R.id.correct_answer_ten);
@@ -85,6 +90,8 @@ public class ThirdQuestionsPageActivity extends AppCompatActivity {
             Toast.makeText(this, "Inorrect answer", Toast.LENGTH_SHORT).show();
         }
     }
+
+    //Question 11 if statements
 
     public void toastMessage11(View view) {
 
@@ -115,31 +122,16 @@ public class ThirdQuestionsPageActivity extends AppCompatActivity {
         }
     }
 
+    //Question 12 if statements
+
     public void toastMessage12(View view) {
-
-        RadioButton answerTwelve_btOne = (RadioButton) findViewById(R.id.incorrect_answer_twentythree);
-        RadioButton answerTwelve_btTwo = (RadioButton) findViewById(R.id.correct_answer_twelve);
-        RadioButton answerTwelve_btThree = (RadioButton) findViewById(R.id.incorrect_answer_twentyfour);
-
-        boolean correctAnswerTwelve = answerTwelve_btTwo.isChecked();
-        if (correctAnswerTwelve) {
-            Total = Total + 1;
-            answerTwelve_btTwo.setTextColor(Color.GREEN);
+        EditText editText = (EditText) findViewById(R.id.edit_text_myrtle);
+        String answer = editText.getText().toString();
+        if (answer.equalsIgnoreCase("Moaning Myrtle")) {
+            Total++;
+            Toast.makeText(ThirdQuestionsPageActivity.this, "Correct Answer", Toast.LENGTH_SHORT).show();
         } else {
-
-            answerTwelve_btOne.setTextColor(Color.RED);
-            answerTwelve_btTwo.setTextColor(Color.GREEN);
-            answerTwelve_btThree.setTextColor(Color.RED);
-        }
-
-        if (answerTwelve_btOne.isChecked()) {
-            Toast.makeText(this, "Incorrect answer!", Toast.LENGTH_SHORT).show();
-        }
-        if (answerTwelve_btTwo.isChecked()) {
-            Toast.makeText(this, "Correct answer!", Toast.LENGTH_SHORT).show();
-        }
-        if (answerTwelve_btThree.isChecked()) {
-            Toast.makeText(this, "Incorrect answer", Toast.LENGTH_SHORT).show();
+            Toast.makeText(ThirdQuestionsPageActivity.this, "Incorrect Answer", Toast.LENGTH_SHORT).show();
         }
     }
 

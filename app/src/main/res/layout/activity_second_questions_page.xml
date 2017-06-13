@@ -12,6 +12,8 @@
         android:orientation="vertical"
         tools:context="com.example.android.harrypotterquizii.SecondQuestionsPageActivity">
 
+        <!-- Question 5 -->
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -27,7 +29,6 @@
             android:text="@string/question5"
             android:textSize="@dimen/text_size" />
 
-        <!-- Question 5 -->
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -152,6 +153,8 @@
 
         </RadioGroup>
 
+        <!--Question 8-->
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -197,6 +200,8 @@
 
         </RadioGroup>
 
+        <!--Enter Button-->
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -214,4 +219,5 @@
         </RelativeLayout>
 
     </LinearLayout>
+
 </ScrollView>
