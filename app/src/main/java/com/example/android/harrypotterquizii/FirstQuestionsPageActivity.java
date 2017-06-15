@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 public class FirstQuestionsPageActivity extends AppCompatActivity {
 
-    int Total = 0;
+    int total = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +35,7 @@ public class FirstQuestionsPageActivity extends AppCompatActivity {
         boolean correctAnswerOne = answerOne_btOne.isChecked();
 
         if (correctAnswerOne) {
-            Total = Total + 1;
+            total++;
             answerOne_btOne.setTextColor(Color.GREEN);
         } else {
             answerOne_btOne.setTextColor(Color.GREEN);
@@ -65,7 +65,7 @@ public class FirstQuestionsPageActivity extends AppCompatActivity {
         boolean correctAnswerTwo = answerTwo_btThree.isChecked();
 
         if (correctAnswerTwo) {
-            Total = Total + 1;
+            total++;
             answerTwo_btThree.setTextColor(Color.GREEN);
         } else {
             answerTwo_btOne.setTextColor(Color.RED);
@@ -94,7 +94,7 @@ public class FirstQuestionsPageActivity extends AppCompatActivity {
         boolean correctAnswerThree = answerThree_btThree.isChecked();
 
         if (correctAnswerThree) {
-            Total = Total + 1;
+            total++;
             answerThree_btThree.setTextColor(Color.GREEN);
         } else {
             answerThree_btOne.setTextColor(Color.RED);
@@ -115,38 +115,42 @@ public class FirstQuestionsPageActivity extends AppCompatActivity {
     //Question 4 if statements
 
     public void toastMessage4(View view) {
-//        RadioButton answerFour_btOne = (RadioButton) findViewById(R.id.incorrect_answer_seven);
-//        RadioButton answerFour_btTwo = (RadioButton) findViewById(R.id.correct_answer_four);
-//        RadioButton answerFour_btThree = (RadioButton) findViewById(R.id.incorrect_answer_eight);
-
         CheckBox answerFour_btOne = (CheckBox) findViewById(R.id.incorrect_answer_seven);
         CheckBox answerFour_btTwo = (CheckBox) findViewById(R.id.correct_answer_four);
         CheckBox answerFour_btThree = (CheckBox) findViewById(R.id.incorrect_answer_eight);
 
-        boolean firstCorrectAnswerFour = answerFour_btTwo.isChecked() && answerFour_btThree.isChecked();
+        boolean firstCorrectAnswerFour = !answerFour_btOne.isChecked() &&
+                answerFour_btTwo.isChecked() && answerFour_btThree.isChecked();
 
         if (firstCorrectAnswerFour) {
 
-            Total = Total + 1;
+            total++;
             answerFour_btTwo.setTextColor(Color.GREEN);
             answerFour_btThree.setTextColor(Color.GREEN);
             Toast.makeText(this, "Correct answer", Toast.LENGTH_SHORT).show();
-        } else if (answerFour_btOne.isChecked() && answerFour_btTwo.isChecked()) {
+        } else if (answerFour_btOne.isChecked() && answerFour_btTwo.isChecked() &&
+                !answerFour_btThree.isChecked()) {
             answerFour_btOne.setTextColor(Color.RED);
             answerFour_btTwo.setTextColor(Color.RED);
-            Toast.makeText(this, "Sorry, those two answers were wrong", Toast.LENGTH_SHORT).show();
-        } else if (answerFour_btOne.isChecked() && answerFour_btThree.isChecked()) {
+            Toast.makeText(this, "Sorry, those answers were wrong", Toast.LENGTH_SHORT).show();
+        } else if (answerFour_btOne.isChecked() && answerFour_btThree.isChecked() &&
+                !answerFour_btTwo.isChecked()) {
             answerFour_btOne.setTextColor(Color.RED);
             answerFour_btThree.setTextColor(Color.RED);
-            Toast.makeText(this, "Sorry, those two answers are wrong", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Sorry, those answers are wrong", Toast.LENGTH_SHORT).show();
+        } else if (answerFour_btOne.isChecked() && answerFour_btThree.isChecked() &&
+                answerFour_btTwo.isChecked()) {
+            answerFour_btOne.setTextColor(Color.RED);
+            answerFour_btThree.setTextColor(Color.RED);
+            Toast.makeText(this, "You can only check two boxes", Toast.LENGTH_SHORT).show();
         }
     }
 
-    //Intent for transitioning to second page of questions.
+        //Intent for transitioning to second page of questions.
 
     public void second_question_page(View view) {
         Intent intentOne = new Intent(this, SecondQuestionsPageActivity.class);
-        intentOne.putExtra("RunningTotal", Total);
+        intentOne.putExtra("RunningTotal", total);
         startActivity(intentOne);
     }
 }

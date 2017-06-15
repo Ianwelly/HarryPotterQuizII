@@ -40,7 +40,7 @@ public class SecondQuestionsPageActivity extends AppCompatActivity {
         boolean correctAnswerFive = answerFive_btOne.isChecked();
 
         if (correctAnswerFive) {
-            Total = Total + 1;
+            Total ++;
             answerFive_btOne.setTextColor(Color.GREEN);
         } else {
             answerFive_btOne.setTextColor(Color.GREEN);
@@ -70,7 +70,7 @@ public class SecondQuestionsPageActivity extends AppCompatActivity {
         boolean correctAnswerSix = answerSix_btThree.isChecked();
 
         if (correctAnswerSix) {
-            Total = Total + 1;
+            Total ++;
             answerSix_btThree.setTextColor(Color.GREEN);
         } else {
             answerSix_btOne.setTextColor(Color.RED);
@@ -100,7 +100,7 @@ public class SecondQuestionsPageActivity extends AppCompatActivity {
         boolean correctAnswerSeven = answerSeven_btOne.isChecked();
 
         if (correctAnswerSeven) {
-            Total = Total + 1;
+            Total ++;
             answerSeven_btOne.setTextColor(Color.GREEN);
         } else {
             answerSeven_btOne.setTextColor(Color.GREEN);
@@ -129,7 +129,7 @@ public class SecondQuestionsPageActivity extends AppCompatActivity {
         boolean correctAnswerEight = answerEight_btThree.isChecked();
 
         if (correctAnswerEight) {
-            Total = Total + 1;
+            Total ++;
             answerEight_btThree.setTextColor(Color.GREEN);
         } else {
             answerEight_btOne.setTextColor(Color.RED);

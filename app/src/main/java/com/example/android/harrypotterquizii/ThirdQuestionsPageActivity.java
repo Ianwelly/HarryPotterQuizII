@@ -40,7 +40,7 @@ public class ThirdQuestionsPageActivity extends AppCompatActivity {
         boolean correctAnswerNine = answerNine_btThree.isChecked();
 
         if (correctAnswerNine) {
-            Total = Total + 1;
+            Total ++;
             answerNine_btThree.setTextColor(Color.GREEN);
         } else {
 
@@ -71,7 +71,7 @@ public class ThirdQuestionsPageActivity extends AppCompatActivity {
         boolean correctAnswerTen = answerTen_btOne.isChecked();
 
         if (correctAnswerTen) {
-            Total = Total + 1;
+            Total ++;
             answerTen_btOne.setTextColor(Color.GREEN);
         } else {
 
@@ -102,7 +102,7 @@ public class ThirdQuestionsPageActivity extends AppCompatActivity {
         boolean correctAnswerEleven = answerEleven_btThree.isChecked();
 
         if (correctAnswerEleven) {
-            Total = Total + 1;
+            Total ++;
             answerEleven_btThree.setTextColor(Color.GREEN);
         } else {
 
@@ -126,7 +126,7 @@ public class ThirdQuestionsPageActivity extends AppCompatActivity {
 
     public void toastMessage12(View view) {
         EditText editText = (EditText) findViewById(R.id.edit_text_myrtle);
-        String answer = editText.getText().toString();
+        String answer = editText.getText().toString().trim();
         if (answer.equalsIgnoreCase("Moaning Myrtle")) {
             Total++;
             Toast.makeText(ThirdQuestionsPageActivity.this, "Correct Answer", Toast.LENGTH_SHORT).show();
@@ -137,9 +137,9 @@ public class ThirdQuestionsPageActivity extends AppCompatActivity {
 
     public void final_score_page(View view) {
         Intent intentFinal = new Intent(this, FinalScoreActivity.class);
-
         intentFinal.putExtra("RunningTotal", Total);
         startActivity(intentFinal);
+        Toast.makeText(ThirdQuestionsPageActivity.this, "Your final score is" + Total, Toast.LENGTH_SHORT).show();
     }
 }
 
